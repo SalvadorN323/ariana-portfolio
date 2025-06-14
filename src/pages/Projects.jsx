@@ -41,7 +41,7 @@ const Projects = () => {
         link: 'https://drive.google.com/file/d/1olCSjnRx3NfKkdV0v2CxsmuNwgKNEzJ2/view?usp=drive_link'
       },
       {
-        title: 'Isolation and Alienation in John Donne’s Poetry',
+        title: 'Isolation and Alienation in John Donne\'s Poetry',
         description: 'The role of art in personal growth and community building.',
         category: 'Essay',
         link: 'https://docs.google.com/document/d/1o4ZoH-yCQVMmJvaPXLGFU6YdQ8qiqipz/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
@@ -65,7 +65,7 @@ const Projects = () => {
         link: 'https://drive.google.com/file/d/1cPqc5ZAFRUS137eTZKCf_sRocaDusCYt/view?usp=drive_link'
       },
       {
-        title: 'Final Exam',
+        title: 'Different Perspectives of Philosophical Inquiries',
         description: 'The role of art in personal growth and community building.',
         category: 'Essay',
         link: 'https://docs.google.com/document/d/1-mRhCeMmNrF16GOSrQ93IGWg-pFCnhIb/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
@@ -107,13 +107,13 @@ const Projects = () => {
         link: 'https://docs.google.com/document/d/1OspU7YzQOr97bYxKTbstgw1ncbcE_7Fb/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
       },
       {
-        title: 'The Dynamics in Manuel Puig’s Kiss of a Spider Woman',
+        title: 'The Dynamics in Manuel Puig\'s Kiss of a Spider Woman',
         description: 'The role of art in personal growth and community building.',
         category: 'Essay',
         link: 'https://docs.google.com/document/d/1rsu6oGmbFtKDUxkg_7mn_sZWtj9rlEwx/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
       },
       {
-        title: 'What Was Edna Pontellier’s Reason? ',
+        title: 'What Was Edna Pontellier\'s Reason? ',
         description: 'The role of art in personal growth and community building.',
         category: 'Essay',
         link: 'https://docs.google.com/document/d/1bNrJwA5srnMdyYdO--Srkd4oYaw-Q1YS/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
@@ -125,7 +125,7 @@ const Projects = () => {
         link: 'https://drive.google.com/file/d/1hhOyTYepEg1h3F-T5KSSx1NRw0zqmrJT/view?usp=drive_link'
       }
     ],
-    fanfiction: [
+    'Creative Writing': [
       {
         title: 'Beyond the Stars',
         description: 'A sci-fi adventure exploring the depths of space and human potential.',
