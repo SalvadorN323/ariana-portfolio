@@ -5,6 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const Contact = () => {
   const theme = useTheme();
@@ -13,13 +14,13 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: <LinkedInIcon />,
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/ariana-medina-1b1a0a307/',
       label: 'LinkedIn',
       color: '#0077B5'
     },
     {
       icon: <InstagramIcon />,
-      url: 'https://instagram.com/yourusername',
+      url: 'https://www.instagram.com/seraphicoasiszine/',
       label: 'Instagram',
       color: '#E4405F'
     }
@@ -140,14 +141,16 @@ const Contact = () => {
           sx={{
             mt: 6,
             display: 'flex',
-            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 3,
             width: '100%'
           }}
         >
           <Button
             variant="contained"
             startIcon={<EmailIcon />}
-            href="mailto:your.email@example.com"
+            href="mailto:arianam3dina@gmail.com"
             sx={{
               py: 1.5,
               px: 4,
@@ -162,6 +165,26 @@ const Contact = () => {
             }}
           >
             Email Me
+          </Button>
+
+          <Button
+            variant="contained"
+            startIcon={<PhoneIcon />}
+            href="tel:209-284-9709"
+            sx={{
+              py: 1.5,
+              px: 4,
+              borderRadius: 2,
+              fontSize: { xs: '1rem', md: '1.1rem' },
+              background: 'linear-gradient(45deg, #FF69B4 30%, #C71585 90%)',
+              boxShadow: '0 3px 5px 2px rgba(255, 105, 180, 0.3)',
+              '&:hover': {
+                background: 'linear-gradient(45deg, #C71585 30%, #FF69B4 90%)',
+                boxShadow: '0 5px 15px 2px rgba(255, 105, 180, 0.4)'
+              }
+            }}
+          >
+            Call Me
           </Button>
         </Box>
       </Box>
