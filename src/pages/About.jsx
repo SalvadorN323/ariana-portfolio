@@ -93,10 +93,7 @@ const About = () => {
                   mb: 3
                 }}
               >
-                I am a passionate creative writer and digital content specialist with a strong
-                background in crafting compelling narratives and engaging digital content.
-                My expertise spans across various forms of creative writing, including
-                poetry, prose, and digital storytelling.
+                Hi there! I'm Ariana, a creative writer and digital content specialist who loves crafting stories that connect and inspire. Whether it's through poetry, prose, or engaging digital content, I'm passionate about bringing ideas to life with a keen eye for detail and a knack for captivating audiences.
               </Typography>
               <Typography
                 variant="body1"
@@ -105,9 +102,9 @@ const About = () => {
                   lineHeight: 1.8
                 }}
               >
-                With a keen eye for detail and a deep understanding of audience engagement,
-                I create content that resonates with readers while maintaining professional
-                standards and creative integrity.
+               Beyond the keyboard, my world is filled with a vibrant mix of passions. You'll often find me hiking through nature, getting lost in a good book, or exploring the latest tunes and podcasts. I'm a collector of unique trinkets, an enthusiast of Sonny Angels, and someone who believes in expressing herself through art, fashion (hello, jorts!), and even tattoos and piercings. When I'm not writing, I'm probably enjoying arts and crafts, spending quality time with loved ones, and watching films (and maybe even a few video games!). I'm also deeply committed to fostering a safe space for women to create art, and find joy in the simple things like journaling, art, and Disneyland.  
+
+
               </Typography>
             </Paper>
           </Grid>
@@ -147,7 +144,19 @@ const About = () => {
                   'Digital Storytelling',
                   'Social Media Management',
                   'Content Editing',
-                  'Research & Analysis'
+                  'Research & Analysis', 
+                  'Art & Design', 
+                  'Google Workspace',
+                  'Microsoft Office',
+                  'Analytical Thinking',
+                  'Adaptability',
+                  'Teamwork',
+                  'Time Management',
+                  'Problem Solving',
+                  'Communication',
+                  'Leadership',
+                  'Attention to Detail',
+                  'Graphic Design' 
                 ].map((skill, index) => (
                   <Grid item xs={6} key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Box
