@@ -1,7 +1,12 @@
 import React from 'react';
-import { Container, Typography, Box, Grid, Paper, useTheme, Accordion, AccordionSummary, AccordionDetails, Link } from '@mui/material';
+import { Container, Typography, Box, Grid, Paper, useTheme, Accordion, AccordionSummary, AccordionDetails, Link, Button } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LaunchIcon from '@mui/icons-material/Launch';
+import Carousel from 'react-material-ui-carousel';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import DescriptionIcon from '@mui/icons-material/Description';
 
 const Projects = () => {
   const theme = useTheme();
@@ -9,159 +14,289 @@ const Projects = () => {
   const projectCategories = {
     poems: [
       {
-        title: 'Whispers of Dawn',
-        description: 'A collection of morning-inspired poetry exploring themes of new beginnings and hope.',
+        title: 'The Weight of Appreciation',
+        description: 'I am a vessel of emotion and purpose, and it is time to realize it. ',
         category: 'Poetry',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        link: 'https://drive.google.com/file/d/1TYdt0_9giwvlvfIty5CP3SinlWaqUX34/view?usp=drive_link'
       },
       {
-        title: 'Urban Echoes',
-        description: 'Poems capturing the rhythm and soul of city life, from dawn to dusk.',
+        title: 'The Symphony of Love',
+        description: 'The loving acts of learning to love life. ',
         category: 'Poetry',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        link: 'https://drive.google.com/file/d/1hCOTCiNlHephbnNzJRjQ96NWHAiqmQaW/view?usp=drive_link'
       },
       {
-        title: 'Nature\'s Song',
-        description: 'Verses celebrating the beauty and wonder of the natural world.',
+        title: 'The Light',
+        description: 'The deafening noise of a honk redirecting childhood thoughts.',
         category: 'Poetry',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        link: 'https://drive.google.com/file/d/163KIeAMnvH8vGGsKR_4FdyM4a7oDlHuI/view?usp=drive_link'
+      },
+      {
+        title: 'Sunshine So Bright I Need Sunscreen',
+        description: 'Fearful solitude to radiant connection and the shedding of moon-like shadows.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/1DruoqXj_CdJsj2mcl9ymNYPsl9G-HX5-/view?usp=drive_link'
+      },
+      {
+        title: 'Pink Blind Box',
+        description: 'A pretty pink princess rediscovering her love of the color pink.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/1zn_KzTn3SPCbv8gZJM0TwtFAgYSvtRC_/view?usp=drive_link'
+      },
+      {
+        title: 'Out of Place, Not at Home',
+        description: 'The healing nature of greenery, and its positive impacts.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/1ih9wje40TtqriWNY76_bRqsPPfW7aDRO/view?usp=drive_link'
+      },
+      {
+        title: 'My Pink Love',
+        description: 'A trinket becomes more than an object, but a face of hope.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/167xSPwIgxijtwoHJTFwJbnpQuhLuwThm/view?usp=drive_link'
+      },
+      {
+        title: 'My First Word',
+        description: 'Not Dada or Mama, an ode to what would become of a yearner.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/1-EJGLyQit0aRWnKQWnOWbzExt8IGIVay/view?usp=drive_link'
+      },
+      {
+        title: 'Bruised Banana',
+        description: 'A banana that is bruised.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/1vzk5eBcthOCaG7cgJShrwXyHNzW4sd_M/view?usp=drive_link'
+      },
+      {
+        title: 'Blue Glue',
+        description: 'A sad color to hold everything together.',
+        category: 'Poetry',
+        link: 'https://drive.google.com/file/d/1wHBbrvUSxnJ6GICd43I-LSgwmC8DVsTC/view?usp=drive_link'
       }
     ],
     essays: [
       {
-        title: 'Afterlife in Wicca',
-        description: 'An exploration of narrative in modern media and its impact on society.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
         title: 'Redefining Science Fiction',
-        description: 'Examining human relationships in contemporary society through personal experiences.',
+        description: "In 'Octavia E. Butler: Redefining Science Fiction', the author highlights Butler's significant contributions to the genre, particularly as an African American woman in a predominantly white and male-dominated field. The essay focuses on her short story collection, Bloodchild and Other Stories, to demonstrate how Butler uses speculative fiction to explore complex themes of race, gender, power, and humanity. Through the symbiotic relationship between humans and the Tlic aliens in 'Bloodchild', the essay argues that Butler challenges traditional narratives, redefines bodily autonomy, and critiques power dynamics, including parallels to master-slave relationships. Ultimately, the essay posits that Butler's work serves as a powerful vehicle for Afrofuturism, pushing the boundaries of science fiction and inspiring readers to envision more diverse and equitable futures.",
         category: 'Essay',
         link: 'https://drive.google.com/file/d/1olCSjnRx3NfKkdV0v2CxsmuNwgKNEzJ2/view?usp=drive_link'
       },
       {
-        title: 'Isolation and Alienation in John Donne\'s Poetry',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1o4ZoH-yCQVMmJvaPXLGFU6YdQ8qiqipz/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
-        title: 'Auteur Theory Defined Through Jordan Peele',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1Ayc_uhVy5m0AzGSx_MgduViJzaiqC6Hs/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
-        title: 'Day and Night: The Rivalry',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1fCHYcJYbNSSRsgYnSZ0-VHjNQ3OwwU9w/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
-        title: "Exploring Sympathy Through Darkness Within Gaiman's 'Snow, Glass, Apples'",
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://drive.google.com/file/d/1cPqc5ZAFRUS137eTZKCf_sRocaDusCYt/view?usp=drive_link'
-      },
-      {
-        title: 'Different Perspectives of Philosophical Inquiries',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1-mRhCeMmNrF16GOSrQ93IGWg-pFCnhIb/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
-        title: 'The Soundtrack of Summer',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://drive.google.com/file/d/1Wylp4PXoOHmAhiypPynI5sDhUrzKWZbJ/view?usp=drive_link'
-      },
-      {
-        title: 'Shadows of Inequality',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1buZ6lLUG0iL50zZegVdBaaTGiS5eqZ9I/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
-        title: 'The Life of a Kitchen Table',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1Pip9Lu-P1w0R2XTWh5pzzIMCbyvR3MNS/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
         title: 'Love and its Consequences',
-        description: 'The role of art in personal growth and community building.',
+        description: "This essay delves into Jean-Paul Sartre's existentialist philosophy of love, as presented in his work Being and Nothingness, where he controversially posits that a lover desires to be the sole reason for the beloved's existence and freedom. The author applies this Sartrean lens to the romantic relationship between Elio and Oliver in the film Call Me By Your Name, arguing that Elio embodies the 'beloved' by seemingly surrendering his autonomy to Oliver. However, the essay then critically challenges Sartre's perspective, contending that such a concept of love leads to an unfulfilling, automaton-like state for the beloved, advocating instead for a mutual and equally free partnership. Ultimately, the essay presents a nuanced discussion of love through a philosophical framework, a cinematic example, and a personal counter-argument.",
         category: 'Essay',
         link: 'https://drive.google.com/file/d/1X53N-wR8JLtwsn2TC11UkzIjOkY8yEK2/view?usp=drive_link'
       },
       {
-        title: 'Beauty in the Little Things',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://docs.google.com/document/d/1_nNevErRvubw-FsDUMb67x6C0_6XrJ2N/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      },
-      {
         title: 'Representation of Religious Experiences Through George Herbert',
-        description: 'The role of art in personal growth and community building.',
+        description: "In 'Representation of Religious Experiences Through George Herbert,' the author examines how George Herbert, a prominent 17th-century metaphysical poet, conveyed religious experiences in his work. The essay specifically analyzes two of Herbert's most famous poems, 'The Altar' and 'Easter Wings,' highlighting their unique structural forms and rich symbolic meaning. Through these poems, the essay explores themes of devotion, the consequences of sin, and the speaker's spiritual struggles and yearning for redemption. Ultimately, the analysis demonstrates Herber's masterful blend of artistic creativity and theological depth in representing profound religious experiences.",
         category: 'Essay',
-        link: 'https://docs.google.com/document/d/1OspU7YzQOr97bYxKTbstgw1ncbcE_7Fb/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        link: 'https://drive.google.com/file/d/1zRkjev8tzWv4JobaIxaCDC2adpFPzNjN/view?usp=drive_link'
       },
       {
-        title: 'The Dynamics in Manuel Puig\'s Kiss of a Spider Woman',
-        description: 'The role of art in personal growth and community building.',
+        title: "The Dynamics in Manuel Puig's Kiss of a Spider Woman",
+        description: "In Manuel Puig's postmodern novel Kiss of a Spider Woman, the author explores the intricate dynamics between two cellmates, Luis Molina and Valentin Arregui, against the backdrop of Argentina's oppressive political climate. The essay highlights Puig's unique narrative structure, which interweaves Molina's escapist film narrations with the harsh realities of prison life, blurring the lines between fantasy and reality. Intertextuality is central to the novel, revealing Molina's identification with feminine film heroines and challenging traditional gender roles. The evolving relationship between the two men, from initial opposition to a profound connection marked by care and transformation, underscores the novel's exploration of identity, friendship, and societal expectations.",
         category: 'Essay',
-        link: 'https://docs.google.com/document/d/1rsu6oGmbFtKDUxkg_7mn_sZWtj9rlEwx/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        link: 'https://drive.google.com/file/d/1_8lPOsRvWn1fj8Yh8cVnCb3C9enPVjZo/view?usp=drive_link'
       },
       {
-        title: 'What Was Edna Pontellier\'s Reason? ',
-        description: 'The role of art in personal growth and community building.',
+        title: "What Was Edna Pontellier's Reason?",
+        description: "In Kate Chopin's The Awakening, Edna Pontellier's suicide is often debated as a result of either mental illness or a defiant act of self-liberation.1 This essay argues for the latter, asserting that Edna's death was a deliberate choice to solidify her independence from a patriarchal society. The author traces Edna's journey from a submissive housewife to a woman seeking autonomy, highlighted by her decision to live independently and pursue art.2 Ultimately, the essay contends that Edna's final swim into the ocean represents her ultimate act of rebellion against societal constraints and a powerful statement of individuality in a world that sought to confine her.",
         category: 'Essay',
-        link: 'https://docs.google.com/document/d/1bNrJwA5srnMdyYdO--Srkd4oYaw-Q1YS/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        link: 'https://drive.google.com/file/d/1rzHBdNCNTZ2Yn8EGG63plVVf5W7ogRf_/view?usp=drive_link'
       },
-      {
-        title: 'The Journey that Change Creates',
-        description: 'The role of art in personal growth and community building.',
-        category: 'Essay',
-        link: 'https://drive.google.com/file/d/1hhOyTYepEg1h3F-T5KSSx1NRw0zqmrJT/view?usp=drive_link'
-      }
     ],
     'Creative Writing': [
       {
-        title: 'Beyond the Stars',
-        description: 'A sci-fi adventure exploring the depths of space and human potential.',
-        category: 'Fan Fiction',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        title: 'My Sonny, My Sun',
+        description: 'In "My Sonny, My Sun," Apple Francine Annona navigates the painful legacy of childhood bullying tied to her unique name, leading to a strained relationship with food and her family. Guided by therapy and the unexpected comfort of Sonny Angel figurines, Apple embarks on a journey of healing, ultimately embracing her name and finding peace with herself and her past. This introspective piece explores themes of self-acceptance, the impact of trauma, and the power of small comforts in overcoming deep-seated insecurities.',
+        category: 'Creative Writing',
+        link: 'https://drive.google.com/file/d/1MhZTmuR33SY7QMFHRPQW0mThZaDRDnxX/view?usp=drive_link'
       },
       {
-        title: 'Hidden Realms',
-        description: 'Fantasy exploration of magical worlds and their inhabitants.',
-        category: 'Fan Fiction',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
+        title: 'Lost in the Sauce',
+        description: "This short story follows ten-year-old Annona, who, terrified of bugs, embarks on an unexpected magical journey when she tumbles into her grandma's pot of alphabet soup. Within this whimsical, liquid world, she encounters friendly, letter-adorned ladybugs and playful noodle caterpillars. This fantastical experience challenges her deep-seated fears, transforming her perception and empowering her with newfound courage upon her return to reality.",
+        category: 'Creative Writing',
+        link: 'https://drive.google.com/file/d/1CToUOxWbMmxwd2jjm2C2lHJPYaNJcL5v/view?usp=drive_link'
       },
       {
-        title: 'Modern Tales',
-        description: 'Contemporary reimaginings of classic stories with a fresh perspective.',
-        category: 'Fan Fiction',
-        link: 'https://docs.google.com/document/d/1FYSOpO5vT-mKmeytngEczBku40oqVQRg/edit?usp=drive_link&ouid=114336115167780237693&rtpof=true&sd=true'
-      }
-    ],
-    images: [
-      {
-        title: 'Visual Poetry',
-        description: 'A collection of photography and digital art that tells stories through imagery.',
-        category: 'Visual Art'
+        title: 'The Magic of Super Duper Burgers',
+        description: "In this personal essay, I explore my lifelong struggle with food, rooted in childhood bullying and forced eating, which led to a restrictive 'plain' palate. A transformative experience with a fully loaded chicken sandwich from 'Super Duper Burgers' sparks a new culinary courage. This pivotal moment, coupled with insights from a food literature class, helps me embrace new flavors and forge deeper connections with family through shared meals, highlighting food's role beyond mere sustenance.",
+        category: 'Creative Writing',
+        link: 'https://drive.google.com/file/d/1UdcsZCx1yuXsfpG_wpuqaUxQ-0LmSFEa/view?usp=drive_link'
       },
       {
-        title: 'Creative Process',
-        description: 'Behind-the-scenes glimpses into the artistic journey and creation.',
-        category: 'Visual Art'
-      },
-      {
-        title: 'Design Portfolio',
-        description: 'A showcase of graphic design and visual storytelling projects.',
-        category: 'Visual Art'
+        title: 'Self-Awareness',
+        description: "This fanfiction, a commentary on Katherine Mansfield's 'The Garden Party,' follows Laura Sheridan, a privileged young woman grappling with the rigid expectations of her wealthy family. Tasked with delivering leftover party food to a grieving working-class family, Laura confronts the stark realities of class divide and her own ignorance through a shocking encounter with Macx, the deceased man's son. This confrontation forces Laura to shed her naiveté and embark on a painful journey toward self-awareness and a desire for genuine change.",
+        category: 'Creative Writing',
+        link: 'https://drive.google.com/file/d/1tYSjjIUcwW-oM_W6OAUcvTrRsC8CkGEl/view?usp=drive_link'
       }
     ]
+  };
+
+  const CustomCarousel = ({ items }) => {
+    return (
+      <Carousel
+        NextIcon={<ArrowForwardIosIcon />}
+        PrevIcon={<ArrowBackIosNewIcon />}
+        navButtonsAlwaysVisible={true}
+        navButtonsProps={{
+          style: {
+            backgroundColor: 'rgba(255, 105, 180, 0.2)',
+            borderRadius: '50%',
+            color: theme.palette.primary.main,
+            '&:hover': {
+              backgroundColor: 'rgba(255, 105, 180, 0.4)',
+            },
+          },
+        }}
+        indicatorContainerProps={{
+          style: {
+            marginTop: '20px',
+          },
+        }}
+        indicatorIconButtonProps={{
+          style: {
+            color: 'rgba(255, 105, 180, 0.3)',
+          },
+        }}
+        activeIndicatorIconButtonProps={{
+          style: {
+            color: theme.palette.primary.main,
+          },
+        }}
+        animation="slide"
+        interval={5000}
+        swipe={true}
+        fullHeightHover={false}
+        sx={{
+          width: '100%',
+          '& .MuiPaper-root': {
+            margin: '0 auto',
+          },
+        }}
+      >
+        {items.map((project, index) => (
+          <Box key={index} sx={{ p: 2, width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <Paper
+              elevation={0}
+              sx={{
+                p: { xs: 3, md: 4 },
+                height: '100%',
+                borderRadius: 4,
+                backgroundColor: 'rgba(255, 255, 255, 0.7)',
+                backdropFilter: 'blur(10px)',
+                boxShadow: '0 8px 32px rgba(255, 105, 180, 0.15)',
+                transition: 'transform 0.3s ease-in-out',
+                '&:hover': {
+                  transform: 'translateY(-5px)'
+                },
+                width: '100%',
+                maxWidth: 800,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center',
+                position: 'relative',
+              }}
+            >
+              <Typography
+                variant="h4"
+                sx={{
+                  mb: 2,
+                  color: 'primary.main',
+                  fontWeight: 600
+                }}
+              >
+                {project.title}
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: 'text.secondary',
+                  lineHeight: 1.8,
+                  mb: 3
+                }}
+              >
+                {project.description}
+              </Typography>
+              <Box
+                sx={{
+                  display: 'inline-block',
+                  px: 2,
+                  py: 1,
+                  borderRadius: 2,
+                  backgroundColor: 'rgba(255, 105, 180, 0.1)',
+                  width: '100%',
+                  mb: 3
+                }}
+              >
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: 'primary.main',
+                    fontWeight: 500
+                  }}
+                >
+                  {project.category}
+                </Typography>
+              </Box>
+              
+              {/* File Preview Section */}
+              <Box sx={{ width: '100%', mb: 3 }}>
+                <iframe
+                  src={project.link.replace('/view?usp=drive_link', '/preview')}
+                  style={{
+                    width: '100%',
+                    height: '400px',
+                    border: 'none',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+                  }}
+                  title={project.title}
+                />
+              </Box>
+
+              {/* Action Buttons */}
+              <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+                <Button
+                  variant="contained"
+                  startIcon={<PictureAsPdfIcon />}
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    backgroundColor: 'rgba(255, 105, 180, 0.9)',
+                    '&:hover': {
+                      backgroundColor: 'rgba(255, 105, 180, 1)',
+                    },
+                  }}
+                >
+                  View PDF
+                </Button>
+                <Button
+                  variant="outlined"
+                  startIcon={<DescriptionIcon />}
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    borderColor: 'primary.main',
+                    color: 'primary.main',
+                    '&:hover': {
+                      borderColor: 'primary.dark',
+                      backgroundColor: 'rgba(255, 105, 180, 0.04)',
+                    },
+                  }}
+                >
+                  Open in Drive
+                </Button>
+              </Box>
+            </Paper>
+          </Box>
+        ))}
+      </Carousel>
+    );
   };
 
   return (
@@ -252,96 +387,7 @@ const Projects = () => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails sx={{ p: 0 }}>
-                <Grid container spacing={4} justifyContent="center" alignItems="center">
-                  {items.map((project, index) => (
-                    <Grid item xs={12} md={6} key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={{
-                          textDecoration: 'none',
-                          width: '100%',
-                          maxWidth: 500,
-                        }}
-                      >
-                        <Paper
-                          elevation={0}
-                          sx={{
-                            p: { xs: 3, md: 4 },
-                            height: '100%',
-                            borderRadius: 4,
-                            backgroundColor: 'rgba(255, 255, 255, 0.7)',
-                            backdropFilter: 'blur(10px)',
-                            boxShadow: '0 8px 32px rgba(255, 105, 180, 0.15)',
-                            transition: 'transform 0.3s ease-in-out',
-                            '&:hover': {
-                              transform: 'translateY(-5px)'
-                            },
-                            width: '100%',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            position: 'relative',
-                          }}
-                        >
-                          {project.link && (
-                            <LaunchIcon
-                              sx={{
-                                position: 'absolute',
-                                top: 16,
-                                right: 16,
-                                color: 'primary.main',
-                                opacity: 0.7,
-                              }}
-                            />
-                          )}
-                          <Typography
-                            variant="h4"
-                            sx={{
-                              mb: 2,
-                              color: 'primary.main',
-                              fontWeight: 600
-                            }}
-                          >
-                            {project.title}
-                          </Typography>
-                          <Typography
-                            variant="body1"
-                            sx={{
-                              color: 'text.secondary',
-                              lineHeight: 1.8,
-                              mb: 3
-                            }}
-                          >
-                            {project.description}
-                          </Typography>
-                          <Box
-                            sx={{
-                              display: 'inline-block',
-                              px: 2,
-                              py: 1,
-                              borderRadius: 2,
-                              backgroundColor: 'rgba(255, 105, 180, 0.1)',
-                              width: '100%'
-                            }}
-                          >
-                            <Typography
-                              variant="body2"
-                              sx={{
-                                color: 'primary.main',
-                                fontWeight: 500
-                              }}
-                            >
-                              {project.category}
-                            </Typography>
-                          </Box>
-                        </Paper>
-                      </Link>
-                    </Grid>
-                  ))}
-                </Grid>
+                <CustomCarousel items={items} />
               </AccordionDetails>
             </Accordion>
           ))}
