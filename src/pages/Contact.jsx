@@ -77,7 +77,7 @@ const Contact = () => {
               fontSize: { xs: '1.1rem', md: '1.3rem' }
             }}
           >
-            Feel free to reach out through any of these platforms
+            Feel free to reach out through any of these platforms!
           </Typography>
         </Box>
 
